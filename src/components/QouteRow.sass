@@ -1,0 +1,38 @@
+@keyframes bidsAnimation
+    0%
+      background-color: rgb(1, 167, 129)
+      opacity: 0.5
+    100%
+      background-color: rgb(23, 45, 62)
+
+@keyframes asksAnimation
+    0%
+      background-color: rgb(228, 75, 68)
+      opacity: 0.5
+    100%
+      background-color: rgb(23, 45, 62)
+
+.row
+  height: 17px
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+
+  div
+    height: 100%
+    width: 34%
+    text-align: center
+    background: rgb(23, 45, 62)
+      
+  &-bids
+    div
+      animation-name: bidsAnimation
+      animation-duration: 0.5s
+
+  &-asks
+    div
+      animation-name: asksAnimation
+      animation-duration: 1s
+
+
